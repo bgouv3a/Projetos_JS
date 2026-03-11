@@ -1,0 +1,25 @@
+#aumenta{
+    width: 5%;
+    float: left;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    margin-left: 42.5%;
+}
+#diminui{
+    width: 5%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+}
+#contador{
+    float: left;
+    width: 5%;
+    text-align: center;
+    line-height: 1.7;
+    font-size: 25px;
+
+}
+h1{
+    margin-left: 45%;
+}
