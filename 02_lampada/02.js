@@ -5,12 +5,10 @@ const lampada = document.getElementById("lampada")
 btnLiga.addEventListener("click", ()=>{
     lampada.classList.add("acesa")
     lampada.classList.remove("apagada")
-    
-    
 })
 btnDesliga.addEventListener("click", ()=>{
-    lampada.classList.add("desligada")
-    lampada.classList.remove("acesa")
-    
+
+    lampada.classList.add("apagada")
+    lampada.classList.remove("acesa") 
     
 })
