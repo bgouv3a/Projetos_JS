@@ -45,3 +45,21 @@ input{
 #resultado{
     text-align: center;
 }
+.baixo{
+    color: yellow;
+}
+.normal{
+    color: #2E7D32;
+}
+.sobrepeso{
+    color: yellow;
+}
+.obeso1{
+    color: orange;
+}
+.obeso2{
+    color: orangered;
+}
+.obeso3{
+    color: red;
+}

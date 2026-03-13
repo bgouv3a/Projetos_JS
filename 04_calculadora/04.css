@@ -1,0 +1,28 @@
+body{
+    justify-content: center;
+    align-items: center;
+    
+}
+#calculadora{
+    background-color: rgb(39, 39, 39);
+    width: 25%;
+    height: 250px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+    margin: 6px;
+    border-radius: 4px;
+    background-color: rgb(124, 124, 124);
+    border: none;
+    color: white;
+}
+#display{
+    background-color: aqua;
+    width: 90%;border-radius: 6px;
+    margin-left: 4%;
+}
