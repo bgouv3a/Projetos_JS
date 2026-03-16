@@ -10,7 +10,7 @@ btnCalcular.addEventListener("click",()=>{
     const altura = Number(document.getElementById("escrevaAltura").value);
     let res = peso / (altura * altura);
 
-    document.getElementById("resultado").innerHTML = `Seu IMC é: ${res.toFixed}`;
+    document.getElementById("resultado").innerHTML = `Seu IMC é: ${res.toFixed(2)}`;
     if (res<18.5) {
         imc.innerHTML = "Abaixo do peso";
         imc.classList.add('baixo');
