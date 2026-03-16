@@ -59,6 +59,10 @@ button:hover{
     background-color:#4CAF50 ;
 
 }
+#delete{
+    font-size: 40px;
+    line-height: 0px;
+}
 #btn-igual:hover{
     background-color:#5ad15e ;
 
