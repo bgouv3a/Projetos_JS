@@ -1,32 +1,40 @@
 
 const btnCalcular = document.getElementById("calcular");
 const res = document.getElementById("resultado");
+let imc = document.getElementById("imc");
+
 
 
 btnCalcular.addEventListener("click",()=>{
     const peso = Number(document.getElementById("escrevaPeso").value);
     const altura = Number(document.getElementById("escrevaAltura").value);
-    let imc = peso / (altura * altura);
+    let res = peso / (altura * altura);
 
-
-    if (imc<18.5) {
-        res.innerHTML = (`A sua classificação IMC é:`);
+    document.getElementById("resultado").innerHTML = `Seu IMC é: ${res.toFixed}`;
+    if (res<18.5) {
+        imc.innerHTML = "Abaixo do peso";
+        imc.classList.add('baixo');
         
-    } else if (imc <25){
-        res.innerText = (`A sua classificação IMC é: Peso Normal`);
+    } else if (res <25){
+        imc.innerHTML = "Peso Normal";
+        imc.classList.add('normal');
     }
-    else if (imc <30){
-       res.innerText = (`A sua classificação IMC é: Sobrepeso`);
+    else if (res <30){
+        imc.innerHTML = "Soprepeso";
+        imc.classList.add('sobrepeso');
     }
-    else if (imc <35){
-        res.innerText = (`A sua classificação IMC é: Obesidade 1`);
+    else if (res <35){
+        imc.innerHTML = "Obesidade grau 1";
+        imc.classList.add('obeso1');
         
     }
-    else if (imc <40){
-        res.innerText = (`A sua classificação IMC é: Obesidade 2`);
+    else if (res <40){
+        imc.innerHTML = "Obesidade grau 2";
+        imc.classList.add('obeso2');   
     }
-    else if (imc >=40){
-        res.innerText = (`A sua classificação IMC é: Obesidade Mórbida`);
+    else if (res >=40){
+        imc.innerHTML = "Obesidade grau 3";
+        imc.classList.add('obeso3');
         
     }
 
