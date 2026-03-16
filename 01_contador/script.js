@@ -9,6 +9,9 @@ btnAumenta.addEventListener ("click", () => {
 })
 
 btnDiminui.addEventListener ("click", () => {
+    if(total> 0){
     total = total-1;
+    
+    }
     contador.innerText = total
 })
